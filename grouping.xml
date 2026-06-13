@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Master Suite" thread-count="5">
+
+<groups>
+<run>
+<include name="Sanity"/>
+
+</run>
+</groups>
+  <test  name="edgeTest">
+  <parameter name="os" value="windows"/>
+  <parameter name="browser" value="chrome"/>
+  <classes>
+      <class name="testCase.TC_001_AccountRegristrationPage"/>
+      <class name="testCase.TC_002_LoginTest"/>
+      <class name="testCase.TC_003_LOGIN_DDT"/>
+      
+    </classes>
+  </test> <!-- Test -->
+  
+</suite> <!-- Suite -->
