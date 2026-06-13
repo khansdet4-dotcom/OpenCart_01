@@ -20,9 +20,9 @@ public class TC_001_AccountRegristrationPage extends BaseClass{
 	public void verify_Account_Regristration() {
 		
 		try {
-		logger.info("**** Starting TC_001_AccountRegristrationPage ****");
+		logger.info("**** Starting TC_001_AccountRegristrationPage****");
 		HomePage hp = new HomePage(driver);
-		logger.info("**** Click on Register Link ****");
+		logger.info("**** Click on Register Link****");
 		hp.clickMyAccount();
 		hp.clickRegistrationLink();
 		
@@ -48,7 +48,7 @@ public class TC_001_AccountRegristrationPage extends BaseClass{
 			logger.debug("Debug Information: ", e);
 			Assert.fail();
 		}
-		logger.info("**** Finished ****");
+		logger.info("****Finished****");
 	}
 	
 	
