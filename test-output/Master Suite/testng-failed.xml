@@ -5,20 +5,13 @@
     <parameter name="os" value="windows"/>
     <parameter name="browser" value="chrome"/>
     <classes>
-      <class name="testCase.TC_001_AccountRegristrationPage">
+      <class name="testCase.TC_003_LOGIN_DDT">
         <methods>
           <include name="tearDown"/>
-          <include name="setUp"/>
-          <include name="verify_Account_Regristration"/>
-        </methods>
-      </class> <!-- testCase.TC_001_AccountRegristrationPage -->
-      <class name="testCase.TC_002_LoginTest">
-        <methods>
-          <include name="tearDown"/>
-          <include name="verify_Login"/>
+          <include name="verify_loginDDT" invocation-numbers="0 1 2"/>
           <include name="setUp"/>
         </methods>
-      </class> <!-- testCase.TC_002_LoginTest -->
+      </class> <!-- testCase.TC_003_LOGIN_DDT -->
     </classes>
   </test> <!-- edgeTest(failed) -->
 </suite> <!-- Failed suite [Master Suite] -->
